@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-html {
+html{
   overflow-x: hidden;
-}
-
-html,
-body {
   margin: 0px;
   padding: 0px;
+}
 
+body {
+  margin: 5%;
   background-color: white;
-  font-family: "Open sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -25,20 +26,9 @@ body {
   background: black;
 }
 
-/*Header*/
-
 header {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 45vh;
+  margin-bottom: 40vh;
   display: flex;
-
-  font-size: 1.5rem;
-}
-
-header a {
-  color: black;
 }
 
 header .left {
@@ -47,7 +37,8 @@ header .left {
 }
 
 header .left a {
-  font-weight: bold;
+  color: black;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -57,6 +48,7 @@ header .right {
 }
 
 header .right a {
+  color: black;
   text-decoration: none;
   margin-left: 16px;
 }
@@ -69,47 +61,37 @@ header a:hover {
   text-decoration: underline;
 }
 
-/*Main*/
-
 main {
-  width: 90%;
-  margin-left: 5%;
   display: flex;
   flex-wrap: wrap;
   grid-gap: 1%;
 }
 
-main .right {
-  font-size: 1.5rem;
-  width: 49.5%;
-  margin: 0px;
-  margin-left: 49.5%;
-  margin-bottom: 1%;
+main p {
+  margin-left: 50.5%;
 }
 
-/*Image styling*/
-
 .container100 {
+  position: relative;
   flex: 100%;
   margin-bottom: 1%;
 }
 
 .container50 {
+  position: relative;
   flex: 49.5%;
   margin-bottom: 1%;
 }
 
 .containerimg {
+  transition: 0.25s;
   max-width: 50%;
   max-height: 80%;
-
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: 0.2s;
 }
 
 .containerbackground {
@@ -119,13 +101,9 @@ main .right {
   background: black;
 }
 
-/*Footer*/
-
 footer {
+  margin-top: 5%;
   display: flex;
-  width: 90%;
-  margin: 5%;
-  font-size: 1.5rem;
 }
 
 footer div.left {
@@ -152,15 +130,12 @@ footer a:hover {
   text-decoration: underline;
 }
 
-/*Media Querys*/
-
 @media screen and (max-width: 1200px) {
   .container100,
   .container50 {
     flex: 100%;
   }
-  main .right {
+  footer p {
     margin-left: 0px;
-    width: 100%;
   }
 }

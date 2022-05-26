@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
-html {
+html{
   overflow-x: hidden;
-}
-
-html,
-body {
   margin: 0px;
   padding: 0px;
+}
 
+body {
+  margin: 5%;
   background-color: black;
-  font-family: "Open sans", sans-serif;
-  font-weight: lighter;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -26,20 +27,9 @@ body {
   background: white;
 }
 
-/*Header*/
-
 header {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 5%;
-  margin-bottom: 45vh;
+  margin-bottom: 40vh;
   display: flex;
-
-  font-size: 1.5rem;
-}
-
-header a {
-  color: white;
 }
 
 header .left {
@@ -48,7 +38,8 @@ header .left {
 }
 
 header .left a {
-  font-weight: bold;
+  color: white;
+  font-weight: 600;
   text-decoration: underline;
 }
 
@@ -58,6 +49,7 @@ header .right {
 }
 
 header .right a {
+  color: white;
   text-decoration: none;
   margin-left: 16px;
 }
@@ -70,7 +62,11 @@ header a:hover {
   text-decoration: underline;
 }
 
-/*Main*/
+main {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1%;
+}
 
 main {
   width: 90%;
@@ -88,7 +84,7 @@ main .left {
 }
 
 main .left img {
-  max-width: 50%;
+  max-width: 80%;
 
   margin: 0;
   position: relative;
@@ -112,15 +108,9 @@ main a:hover {
   text-decoration: underline;
 }
 
-/*Footer*/
-
 footer {
-  display: flex;
-  width: 90%;
-  margin-left: 5%;
   margin-top: 5%;
-  padding-bottom: 5%;
-  font-size: 1.5rem;
+  display: flex;
 }
 
 footer div.left {
@@ -146,8 +136,6 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
-
-/*Media Querys*/
 
 @media screen and (max-width: 1200px) {
   main .left {
